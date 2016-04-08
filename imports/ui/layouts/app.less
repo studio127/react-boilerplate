@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+}
+
+.layout-flexbox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+#header {
+  flex: 0 0 5em;
+  //flex: none;
+  background: darkgreen;
+}
+
+#footer {
+  flex: 0 0 8em;
+  //flex: none;
+  background: #000;
+  min-height: 100px;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto; /* 2 */
+  min-height: calc(100vh - 15em); /* fixes FF issue with minimum height */
+  //min-height: 100vh; /* fixes FF issue with minimum height */
+}
+
+#nav {
+  flex: 0 0 15em; /* expanded size */
+  padding-right: 1em;
+  overflow-y: auto;
+  background: #eee;
+  transition: flex 0.5s;
+
+  @media screen and (max-width: 768px) {
+    flex: 0 0 5em; /* collapsed size */
+  }
+}
+
+#subnav {
+  flex: 0 0 13em;
+  overflow-y: auto;
+  margin-right: 1em;
+  background: brown;
+  display: none;
+}
+
+#main {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  //background: #333;
+  padding: 1em;
+  min-height: 100%;
+}
