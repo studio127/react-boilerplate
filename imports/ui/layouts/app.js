@@ -3,6 +3,7 @@ import {Meteor} from 'meteor/meteor';
 import {Session} from 'meteor/session'; // XXX: SESSION
 import ConnectionNotification from '../components/connection-notification';
 import Tracker from 'tracker-component';
+import { Accounts } from 'meteor/std:accounts-ui';
 
 
 const CONNECTION_ISSUE_TIMEOUT = 5000;
@@ -73,6 +74,7 @@ export default class App extends Tracker.Component {
                     </aside>
                     <main id="main">
                         <h1>Studio 127 simple starter</h1>
+                        {this.props.children}
                     </main>
                 </div>
                 <footer id="footer">

@@ -35,6 +35,8 @@ tap:i18n
 
 # accounts
 accounts-password
+std:accounts-ui
+std:accounts-basic
 
 # mobile
 crosswalk

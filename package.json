@@ -11,20 +11,20 @@
     "storybook": "start-storybook -p 9001"
   },
   "devDependencies": {
+    "@kadira/storybook": "^1.19.0",
     "chai": "^3.5.0",
     "chai-jquery": "^2.0.0",
+    "faker": "^3.1.0",
     "jsdom": "3.1.2",
     "jsdom-global": "1.7.0",
-    "react-addons-test-utils": "^0.14.8",
-    "faker": "^3.1.0",
-    "@kadira/storybook": "^1.6.0"
+    "react-addons-test-utils": "^15.0.2"
   },
   "dependencies": {
     "meteor-node-stubs": "^0.2.1",
-    "react": "^0.14.8",
-    "react-addons-css-transition-group": "^0.14.8",
-    "react-addons-pure-render-mixin": "^0.14.8",
-    "react-dom": "^0.14.8",
+    "react": "^15.0.2",
+    "react-addons-css-transition-group": "^15.0.2",
+    "react-addons-pure-render-mixin": "^15.0.2",
+    "react-dom": "^15.0.2",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.1",
     "redux": "^3.3.1",
